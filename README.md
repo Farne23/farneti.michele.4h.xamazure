@@ -1,1 +1,4 @@
-# farneti.michele.4h.xamazure
+# XamAzure di Michele Farneti
+
+Prova di Xamarin ed Azure: visualizzazione di Nominati e immagini
+
