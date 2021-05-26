@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Farneti.Michele._4H.XamAzure.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#217060" Padding="24" CornerRadius="0">
+            <StackLayout>
+                <Label Text="XamAzure" HorizontalTextAlignment="Center" TextColor="White" FontSize="46"/>
+                <Label Text="Michele Farneti" HorizontalTextAlignment="Center" TextColor="White" FontSize="26"/>
+            </StackLayout>
+        </Frame>
+
+        <Label Text="Visualizzazione di nome cognome ed immagine" FontSize="16" Padding="30,10,30,10"/>
+
+        <Button Text="Go!" Clicked="Button_Clicked"></Button>
+
+        <ListView x:Name="lvStudenti">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell Text="{Binding Nome}" Detail="{Binding Cognome}" ImageSource="{Binding Immagine}" />
+                    <!--<TextCell Text="{Binding Nome}" Detail="{Binding Cognome}" />-->
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
